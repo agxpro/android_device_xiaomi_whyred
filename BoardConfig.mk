@@ -51,7 +51,7 @@ BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200,n8 androidboot.console=ttyMSM0 earlycon=msm_serial_dm,0xc170000 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37
 BOARD_KERNEL_CMDLINE += ehci-hcd.park=3 lpm_levels.sleep_disabled=1 sched_enable_hmp=1
 BOARD_KERNEL_CMDLINE += sched_enable_power_aware=1 service_locator.enable=1 swiotlb=1 androidboot.configfs=true androidboot.usbcontroller=a800000.dwc3
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive buildvariant=userdebug
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET := 0x01000000
@@ -91,8 +91,8 @@ RECOVERY_SDCARD_ON_DATA := true
 TW_INCLUDE_NTFS_3G := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
-TW_MAX_BRIGHTNESS := 255
-TW_DEFAULT_BRIGHTNESS := 140
+TW_MAX_BRIGHTNESS := 3600
+TW_DEFAULT_BRIGHTNESS := 900
 TW_NO_USB_STORAGE := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_EXCLUDE_SUPERSU := true
